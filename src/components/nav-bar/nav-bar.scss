@@ -1,0 +1,39 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 63px;
+  &__logo {
+    font-family: "Verdana-Bold", "Arial", "Helvetica", sans-serif;
+    font-size: 29px;
+    color: $main;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 495px;
+    padding-top: 10px;
+  }
+  &__item {
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: -7px;
+      right: 0;
+      width: 0%;
+      height: 3px;
+      background-color: $main;
+      transition: 300ms;
+    }
+    &:hover:before {
+      left: 0;
+      width: 100%;
+    }
+  }
+}

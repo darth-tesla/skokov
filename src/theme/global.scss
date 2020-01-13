@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: "Verdana", "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.side-padding {
+  padding: 0 40px;
+}
