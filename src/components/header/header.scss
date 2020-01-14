@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   background: url('/assets/img/header-bg.png') no-repeat;
   background-size: cover;
   background-color: #000000;
@@ -26,5 +27,13 @@
     &:not(:last-child) {
       margin-right: 29px;
     }
+  }
+  &__pattern {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
   }
 }
