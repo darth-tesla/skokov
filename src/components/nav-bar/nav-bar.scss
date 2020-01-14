@@ -3,7 +3,11 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 63px;
+  @media (max-width: $md) {
+    align-items: center;
+  }
   &__logo {
+    margin-right: 50px;
     font-family: "Verdana-Bold", "Arial", "Helvetica", sans-serif;
     font-size: 29px;
     color: $main;
@@ -14,6 +18,9 @@
     align-items: flex-start;
     width: 495px;
     padding-top: 10px;
+    @media (max-width: $md) {
+      display: none;
+    }
   }
   &__item {
     position: relative;
@@ -21,7 +28,7 @@
       margin-right: 10px;
     }
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       bottom: -7px;
@@ -34,6 +41,45 @@
     &:hover:before {
       left: 0;
       width: 100%;
+    }
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  @media (max-width: $md) {
+    display: block;
+  }
+  &__nav {
+    position: absolute;
+    top: 121px;
+    right: 0;
+    overflow: hidden;
+    @media (max-width: $sm) {
+      width: 100%;
+    }
+  }
+  &__list {
+    width: 300px;
+    margin-top: -200px;
+    text-align: center;
+    background-color: $shade;
+    visibility: hidden;
+    opacity: 0;
+    transition: 300ms;
+    @media (max-width: $sm) {
+      width: 100%;
+    }
+    &_is-visible {
+      margin-top: 0px;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+  &__item {
+    padding: 10px 0;
+    &:not(:last-child) {
+      border-bottom: 1px solid #ffffff22;
     }
   }
 }
