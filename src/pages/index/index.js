@@ -1,1 +1,1 @@
-import "../../components/nav-bar/nav-bar"
+import "../../components/hamburger-menu/hamburger-menu";

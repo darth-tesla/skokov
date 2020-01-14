@@ -1,2 +1,10 @@
+include ../btn/btn
+
 header.header.side-padding
   include ../nav-bar/nav-bar
+  .header__content.container
+    h1.header__title Global management consulting agency
+    p.header__desc Growth doesn't always go the way you expect. Our strategy consultants can help you climb.
+    .header__btns
+      +btn("Get started", "#")(class="header__btn")
+      +btn("Learn more", "#")(class="btn_empty header__btn")
