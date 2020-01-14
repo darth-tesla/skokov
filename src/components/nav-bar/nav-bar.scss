@@ -6,11 +6,17 @@
   @media (max-width: $md) {
     align-items: center;
   }
+  @media (max-width: 300px) {
+    flex-direction: column;
+  }
   &__logo {
     margin-right: 50px;
     font-family: "Verdana-Bold", "Arial", "Helvetica", sans-serif;
     font-size: 29px;
     color: $main;
+    @media (max-width: 300px) {
+      margin-right: 0;
+    }
   }
   &__list {
     display: flex;

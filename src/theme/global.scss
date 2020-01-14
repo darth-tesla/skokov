@@ -4,7 +4,9 @@ body {
   font-size: 14px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
@@ -26,4 +28,7 @@ a {
 
 .side-padding {
   padding: 0 40px;
+  @media (max-width: 576px) {
+    padding: 0 20px;
+  }
 }
