@@ -1,5 +1,8 @@
 .our-clients {
   grid-column: 2 / 2;
+  &__slider {
+    max-width: 565px;
+  }
   &__title {
     font-family: "Verdana-Bold", "Arial", "Helvetica", sans-serif;
     font-size: 20px;
@@ -14,9 +17,8 @@
     }
   }
   &__logos {
-    display: grid;
+    display: grid !important;
     grid-template-columns: repeat(3, 185px);
     gap: 5px;
-    max-width: 565px;
   }
 }

@@ -105,6 +105,10 @@ module.exports = {
       {
         from: `${PATHS.src}/theme/fonts/`,
         to: `${PATHS.assets}/fonts`
+      },
+      {
+        from: `${PATHS.src}/theme/libs/`,
+        to: `${PATHS.assets}/libs`
       }
     ]),
     new HtmlWebpackPlugin({
