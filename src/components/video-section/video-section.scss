@@ -16,6 +16,10 @@
     font-size: 24px;
     background-color: $main;
     border-radius: 50%;
+    transition: 300ms;
+    &:hover {
+      background-color: $desc;
+    }
   }
   &__title {
     margin-bottom: 14px;
@@ -28,5 +32,29 @@
     font-size: 16px;
     line-height: 24px;
     color: #ffffff;
+  }
+  &__wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $shade;
+    display: none;
+    &_is-visible {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  &__cross {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 50px;
+    transition: 300ms;
+    &:hover {
+      color: $main;
+    }
   }
 }
