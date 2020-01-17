@@ -1,7 +1,17 @@
 .our-clients {
   grid-column: 2 / 2;
+  @media(max-width: $lg) {
+    grid-column: 1 / 1;
+  }
   &__slider {
     max-width: 565px;
+    @media(max-width: 630px) {
+      max-width: 375px;
+      margin: auto;
+    }
+    @media(max-width: 420px) {
+      max-width: 205px;
+    }
   }
   &__title {
     font-family: "Verdana-Bold", "Arial", "Helvetica", sans-serif;
@@ -20,5 +30,16 @@
     display: grid !important;
     grid-template-columns: repeat(3, 185px);
     gap: 5px;
+    @media(max-width: 630px) {
+      grid-template-columns: repeat(2, 185px);
+    }
+    @media(max-width: 420px) {
+      grid-template-columns: repeat(2, 100px);
+    }
+  }
+  &__logo {
+    @media(max-width: 420px) {
+      width: 100px;
+    }
   }
 }
