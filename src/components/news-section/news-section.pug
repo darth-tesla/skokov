@@ -1,21 +1,13 @@
 include ../section-title/section-title
+include ../news-preview-card/news-preview-card
 section.news-section.side-padding
   .news-section__content.container
     +section-title("NEWS")
     p.news-section__desc Together, we find value across boundaries, develop insights to act on, and energize teams to sustain success. We're passionate about always doing the right thing for our clients, our people and our communities, even if it isn't easy.
     .news-section__news-box
       img.news-section__img.news-section__img-1(src="/assets/img/news-section-1.png", alt="News photo")
-      .news-preview-card.news-section__card-1
-        h3.news-preview-card__title WHY FINANCIAL INSTITUTIONS NEED A NEW IT MODEL
-        p.news-preview-card__desc Why old IT models are unlikely to deliver the competitive edge that banks, insurers and wealth management firms need from technology
-        span.news-preview-card__date 09.03.2014
+      +news-preview-card("WHY FINANCIAL INSTITUTIONS NEED A NEW IT MODEL", "IT models are unlikely to deliver the competitive edge that banks, insurers and wealth management firms need from technology", "09.03.2014", "1")(class="news-preview-card__card-1")
       img.news-section__img.news-section__img-2(src="/assets/img/news-section-2.png", alt="News photo")
-      .news-preview-card.news-section__card-2
-        h3.news-preview-card__title REIMAGINING IT FOR AN OMNICHANEL WORLD
-        p.news-preview-card__desc The technology that powers retail is evolving rapidly. Retailers and their IT groups will have to rise to stay ahead.
-        span.news-preview-card__date 08.20.2014
+      +news-preview-card("REIMAGINING IT FOR AN OMNICHANEL WORLD", "The technology that powers retail is evolving rapidly. Retailers and their IT groups will have to rise to stay ahead.", "08.20.2014", "2")
       img.news-section__img.news-section__img-3(src="/assets/img/news-section-3.png", alt="News photo")
-      .news-preview-card.news-section__card-3
-        h3.news-preview-card__title MAKING THE MOST OF GENERATION ASSETS IN TURBULENT TIMES
-        p.news-preview-card__desc A thorough review of a power generation portfolio informs decisions about how to reduce costs, raise revenues and make strategic plans.
-        span.news-preview-card__date 08.27.2014
+      +news-preview-card("MAKING THE MOST OF GENERATION ASSETS IN TURBULENT TIMES", "A thorough review of a power generation portfolio informs decisions about how to reduce costs, raise revenues and make strategic plans.", "08.27.2014", "3")
