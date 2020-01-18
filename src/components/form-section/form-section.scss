@@ -122,5 +122,10 @@
     background-color: $main;
     border: none;
     border-radius: 25px;
+    cursor: pointer;
+    transition: 300ms;
+    &:hover {
+      background-color: #ff8383;  
+    }
   }
 }

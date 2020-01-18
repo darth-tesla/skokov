@@ -41,6 +41,7 @@
     left: 0;
     background-color: $shade;
     display: none;
+    z-index: 4;
     &_is-visible {
       display: flex;
       justify-content: center;
@@ -53,6 +54,7 @@
     right: 15px;
     font-size: 50px;
     transition: 300ms;
+    z-index:4;
     &:hover {
       color: $main;
     }

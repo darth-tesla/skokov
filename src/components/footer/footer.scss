@@ -31,6 +31,10 @@
     color: $main;
     font-size: 21px;
     padding-left: 15px;
+    transition: 300ms;
+    &:hover {
+      color: #ff8383;
+    }
     &:not(:last-child) {
       padding-right: 15px;
       border-right: 1px solid $main;
