@@ -1,0 +1,27 @@
+.news-header {
+  position: relative;
+  background: url("/assets/img/header-bg.png") no-repeat;
+  background-size: cover;
+  background-color: #000000;
+  &__content {
+    padding-top: 82px;
+    padding-bottom: 420px;
+    text-align: center;
+  }
+  &__title {
+    position: relative;
+    font-family: "Verdana-Bold", "Arial", "Helvetica", sans-serif;
+    font-size: 56px;
+    color: #ffffff;
+    z-index: 1;
+  }
+  &__pattern {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+  }
+}

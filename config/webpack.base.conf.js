@@ -115,6 +115,11 @@ module.exports = {
       template: `${PATHS.src}/pages/index/index.pug`,
       filename: "./index.html",
       inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.src}/pages/news/news.pug`,
+      filename: "./news.html",
+      inject: true
     })
   ]
 };

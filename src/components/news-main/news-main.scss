@@ -1,0 +1,105 @@
+.news-main {
+  position: relative;
+  margin-top: -351px;
+  z-index: 1;
+  &__content {
+    padding-bottom: 60px;
+  }
+  &__search-bar {
+    display: flex;
+    max-width: 288px;
+    margin-left: auto;
+    padding: 6px;
+    background-color: #343434;
+    @media (max-width: 1270px) {
+      margin: auto;
+    }
+    @media (max-width: 270px) {
+      flex-direction: column;
+    }
+  }
+  &__input {
+    box-sizing: border-box;
+    max-width: 241px;
+    width: 100%;
+    height: 28px;
+    margin-right: 5px;
+    background-color: transparent;
+    border: 1px solid $main;
+    @media (max-width: 270px) {
+      max-width: none;
+    }
+  }
+  &__search-btn {
+    box-sizing: border-box;
+    min-width: 42px;
+    width: 42px;
+    height: 28px;
+    font-size: 14px;
+    background-color: $main;
+    color: #ffffff;
+    border: none;
+    @media (max-width: 270px) {
+      width: 100%;
+      margin-top: 5px;
+    }
+  }
+  &__news-box {
+    display: grid;
+    grid-template-areas:
+      "img-1 img-1 card-1 img-2"
+      "card-2 img-3 img-3 card-3";
+    gap: 0;
+    justify-content: center;
+    @media (max-width: 1270px) {
+      grid-template-areas:
+        "img-1 img-1"
+        "card-1 card-2"
+        "img-3 img-3"
+        "img-2 card-3";
+    }
+    @media (max-width: 650px) {
+      grid-template-areas:
+        "img-1"
+        "card-1"
+        "img-3"
+        "card-2"
+        "img-2"
+        "card-3";
+    }
+  }
+  &__img {
+    @media (max-width: 650px) {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
+  &__img-1 {
+    grid-area: img-1;
+  }
+  &__img-2 {
+    grid-area: img-2;
+  }
+  &__img-3 {
+    grid-area: img-3;
+  }
+  &__btn {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    height: 60px;
+    margin: 60px auto 0 auto;
+    font-family: "Verdana-bold", "Arial", "Helvetica", sans-serif;
+    font-size: 16px;
+    background-color: #343434;
+    color: $main;
+    transition: 300ms;
+    &:hover {
+      background-color: $main;
+      color: #ffffff;
+    }
+  }
+}

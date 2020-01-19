@@ -1,8 +1,10 @@
 .nav-bar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 63px;
+  z-index: 2;
   @media (max-width: $md) {
     align-items: center;
   }
