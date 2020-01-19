@@ -120,6 +120,11 @@ module.exports = {
       template: `${PATHS.src}/pages/news/news.pug`,
       filename: "./news.html",
       inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: `${PATHS.src}/pages/post/post.pug`,
+      filename: "./post.html",
+      inject: true
     })
   ]
 };
